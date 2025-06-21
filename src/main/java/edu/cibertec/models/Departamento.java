@@ -26,9 +26,6 @@ public class Departamento {
 
     @OneToMany(mappedBy = "departamento")
     private Set<Empleado> empleados;
-
-    @OneToMany(mappedBy = "departamento")
-    private Set<Usuario> usuarios;
     
     
     public Departamento() {
@@ -74,13 +71,5 @@ public class Departamento {
 
     public void setEmpleados(Set<Empleado> empleados) {
         this.empleados = empleados;
-    }
-
-    public Set<Usuario> getUsuarios() {
-        return usuarios;
-    }
-
-    public void setUsuarios(Set<Usuario> usuarios) {
-        this.usuarios = usuarios;
     }
 }

@@ -31,6 +31,7 @@ public class IncidenciaControlador {
 		return "indexInc";
 	}
 	
+	//Opcion 02
     @GetMapping("/listarIncidencias")
     public ModelAndView listarIncidencias() {
         ModelAndView modelAndView = new ModelAndView("lista_incidencias");
